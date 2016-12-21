@@ -34,7 +34,7 @@ def convert(filename, numbers, separator=";", newfilename=None):
         with open(output_file, "w") as f:
             print "Created new file %s" % output_file
 
-        with open(output_file, "U+w") as f:
+        with open(output_file, "w") as f:
             for bucket in buckets:
                 f.write(separator.join(bucket))
                 f.write('\n')
